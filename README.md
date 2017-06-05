@@ -13,7 +13,7 @@ the network converge on a validation/test set (i.e. on noise-images with circles
 
 This result surprised me because due to the size of the network I expected the network to simply 'memorize' (i.e. overfit)
 on the one training sample that I provided. Instead it seems to find the simplest hypothesis (which is not memorization) 
-that is sufficient to fit the training sample, and this hypothesis seems to be the one we actually need to segment even more images.
+that is sufficient to fit the training sample, and this hypothesis seems to be the one we actually seek.
 
 The following image shows the training sample that is produced by 'train.py' and the one image I used to train the network with: 
 
@@ -22,7 +22,9 @@ The following image shows the training sample that is produced by 'train.py' and
 The network is then trained to segment the circle.
 
 
-**Code**: Just run train.py to load the u-net model and train the model. The function 'create_data' will create the training and validation
+**Code**: 
+
+Just run train.py to load the u-net model and train the model. The function 'create_data' will create the training and validation
 data set and save the images to the 'output' directory (I like visualizing my data). 'X_' and 'Y_' denote the noise-images and the ground-truth mask respectively.
 
 The test.py file tests the trained network on some newly created data by showing ground-truth and the predicted mask in one image which is saved 
