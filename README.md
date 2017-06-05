@@ -36,5 +36,5 @@ in the 'vis' directory.
 - Windows 10 64 bit with an Nvidia 980 TI
 - Python 3.6
 - opencv 3.2.0
-- Tensorflow 1.12
+- Tensorflow 1.2.0-rc1
 - Keras 2.0.4
